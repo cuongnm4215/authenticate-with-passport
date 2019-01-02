@@ -22,6 +22,7 @@ html, body {
 .login-form {
     width: 450px;
     min-height: 400px;
+    height: 100%;
     padding: 20px 50px;
     background: #fff;
     border: solid 1px #d43f8d;

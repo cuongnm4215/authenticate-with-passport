@@ -17,10 +17,10 @@ module.exports = function(passport) {
             User.findOne({ username: username }, function (err, user) {
                 if (err) { return done(err); }
                 if (!user) {
-                    return done(null, false, { message: 'Username is incorrect' });
+                    return done(null, false, { message: 'Incorrect username' });
                 }
                 if (!user.isValidPassword(password)) {
-                    return done(null, false, { message: 'Password is incorrect' });
+                    return done(null, false, { message: 'Incorrect password' });
                 }
                 return done(null, user);
             });

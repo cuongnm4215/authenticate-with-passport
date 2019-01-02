@@ -5,9 +5,9 @@ block content
         .login-form
             include ./partials/messages
             .header
-                span login
+                span Sign in
             .body
-                form(action="/login" method="post" id="login")
+                form(action="/users/login" method="post" id="login")
                     .form-group
                         input(type="text" name="username" autocomplete="off" placeholder="Username" class="form-control")
                     .form-group
@@ -17,6 +17,6 @@ block content
                         label.form-check-label Remember me
                     button(class="btn btn-login", type="submit") Sign in
             .footer
-                span.fl-left <a href="/forget-password">Forget password?</a>
-                span.fl-right Don't have an account? <a href="/register">Register now</a>
+                span.fl-left <a href="/users/forget">Forget password?</a>
+                span.fl-right Don't have an account? <a href="/users/register">Register now</a>
 

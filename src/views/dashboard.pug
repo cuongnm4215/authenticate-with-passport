@@ -7,8 +7,8 @@ block content
         hr
         if user
             p You are loggedin as <b>!{user.username}</b>
-            a(href="/logout" class="btn btn-md btn-primary") Logout
+            a(href="/users/logout" class="btn btn-md btn-primary") Logout
         else
             p You are'nt login
-            a(href="/login" class="btn btn-md btn-primary") Login
+            a(href="/users/login" class="btn btn-md btn-primary") Login
 
